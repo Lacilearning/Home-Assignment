@@ -123,6 +123,8 @@ npm run test:e2e:headed
 - **Successful login:** opens login from the Aldi storefront, submits `ALDI_EMAIL` and `ALDI_PASSWORD`, then checks the storefront URL and visible Account Menu button.
 - **Invalid password:** submits `ALDI_EMAIL` and `ALDI_INVALID_PASSWORD`, then checks that an error message is shown. Also checks if a password reset link and a registration link is present. 
 
+- **Frontend side input field validations (empty e-mail field, empty password field, unvalid e-mail address formats)
+
 The tests use accessible labels and button names. Login selectors and actions live in `pageObjects/login.page.ts`; storefront navigation and selectors live in `pageObjects/storefront.page.ts`.
 
 ## Task API Tests
