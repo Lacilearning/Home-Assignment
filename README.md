@@ -3,8 +3,9 @@
 This repostory contains the Playwright tests for the home assignment and the manual testing scenarios with but report.
 
 - Task 1 - Manual testing - in TestCasesAndBugReport.docx
-- Task 2 - frontend testing (Aldi US account login page tests.) - the test file is in featureTests folder, the setup steps are in this readme file under 'How did I set up the test suit'
-- Task 3 - API testing - endpoint validatons of task endpoints. (does not run agains an existing API, only examle code.) - the test files are in EndpointValidation folder
+- Task 2 - frontend testing (Aldi US account login page tests.) - the test file is in featureTests folder, the setup steps are in this readme file under 'How did I set up the test suit' - the short description of what the tests are doing is in this readme under 'What is checked in the tests'
+- Task 3 - API testing - endpoint validatons of task endpoints. (does not run against an existing API, only examle code.) - the test files are in EndpointValidation folder
+- Answers to bonus questions - in TestCasesAndBugReport.docx
 
 ## Requirements
 
@@ -15,25 +16,25 @@ This repostory contains the Playwright tests for the home assignment and the man
 
 ### How did I set up the test suit
 
-1. Create and enter a project folder.
+1. Created and entered a project folder.
 
    mkdir aldi-login-e2e
    cd aldi-login-e2e
    
 
-2. Initialize an npm project:
+2. Initialized an npm project:
 
    npm init -y
 
    This creates `package.json`, the project manifest where dependencies and commands are recorded.
 
-3. Install the test and TypeScript dependencies:
+3. Installed the test and TypeScript dependencies:
 
    npm install --save-dev @playwright/test@1.56.1 @types/node dotenv typescript
 
    npm adds the packages to `package.json` and creates `package-lock.json` to lock their resolved versions.
 
-4. Add the project scripts to `package.json`:
+4. Added the project scripts to `package.json`:
 
    npm pkg set \
      "scripts.test:e2e=playwright test" \
@@ -54,7 +55,7 @@ This repostory contains the Playwright tests for the home assignment and the man
      tests/EndpointValidation helpers/APIhelpers
 
 7. Create the configuration and source files in VS Code. 
-   The following files hold the configurations, environment variables, gitignore list and test implementations (create them):
+   The following files hold the configurations, environment variables, gitignore list and test implementations of tests, helpers, page objects, test data (create them):
 
    
    touch playwright.config.ts tsconfig.json .gitignore .env.example
